@@ -7,26 +7,26 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 0. The os/arch combo is supported in some official capacity by upstream and a potential candidate.
 1. A script exists in [`generate/`](../generate) that can automatically build a reusable QEMU base image.
 
-|              | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
-|--------------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
-| linux/debian | 1      | 0     | 1   | 0   |         | 0       | 0        |         | 0     |
+|              | Version | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
+|--------------|---------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
+| linux/debian | 10.10.0 | 1      | 0     | 1   | 0   |         | 0       | 0        |         | 0     |
 
 <!--
-| linux/alpine | 0      | 0     | 0   | 0   |         | 0       |          |         | 0     |
-| windows      | 0      | 0     | 0   | 0   |
-| macos        | 0      | 0     |
-| freebsd      | 0      | 0     | 0   | 0   | 0       | 0       |
-| netbsd       | 0      | 0     | 0   | 0   |         |         |          | 0       |       |
-| openbsd      | 0      | 0     | 0   |     |         | 0       |          | 0       |       |
-| dragonflybsd | 0      |
-| plan9        | 0      |       | 0   |     |
-| solaris   `^`|
-| illumos   `^`|
-| haiku     `^`|
-| fuscia    `^`|
-| serenity  `^`|
-| essence   `^`|
-| android   `^`|
+| linux/alpine |         | 0      | 0     | 0   | 0   |         | 0       |          |         | 0     |
+| windows      |         | 0      | 0     | 0   | 0   |
+| macos        |         | 0      | 0     |
+| freebsd      |         | 0      | 0     | 0   | 0   | 0       | 0       |
+| netbsd       |         | 0      | 0     | 0   | 0   |         |         |          | 0       |       |
+| openbsd      |         | 0      | 0     | 0   |     |         | 0       |          | 0       |       |
+| dragonflybsd |         | 0      |
+| plan9        |         | 0      |       | 0   |     |
+| solaris   `^`|         |
+| illumos   `^`|         |
+| haiku     `^`|         |
+| fuscia    `^`|         |
+| serenity  `^`|         |
+| essence   `^`|         |
+| android   `^`|         |
 -->
 
 
