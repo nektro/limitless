@@ -1,20 +1,23 @@
 # Supported Platforms
 
-- `x` the target os/arch combo is supported by the upstream
-- `O` the target os/arch combo is supported to use as a runner
-- `^` the target has yet to be fully evaluated
+Support of a given platform is indicated by a tier system. The tiers are as follows:
+
+> Note: this list is incomplete and being developed in tandem with the rest of the server currently.
+
+0. The os/arch combo is supported in some official capacity by upstream and a potential candidate.
+1. A script exists in [`generate/`](../generate) that can automatically build a reusable QEMU base image.
 
 |              | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
 |--------------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
-| linux/debian | `x`    | `x`   | `x` | `x` |         | `x`     | `x`      |         | `x`   |
-| linux/alpine | `x`    | `x`   | `x` | `x` |         | `x`     |          |         | `x`   |
-| windows      | `x`    | `x`   | `x` | `x` |
-| macos        | `x`    | `x`   |
-| freebsd      | `x`    | `x`   | `x` | `x` | `x`     | `x`     |
-| netbsd       | `x`    | `x`   | `x` | `x` |         |         |          | `x`     |       |
-| openbsd      | `x`    | `x`   | `x` |     |         | `x`     |          | `x`     |       |
-| dragonflybsd | `x`    |
-| plan9        | `x`    |       | `x` |     |
+| linux/debian | 0      | 0     | 0   | 0   |         | 0       | 0        |         | 0     |
+| linux/alpine | 0      | 0     | 0   | 0   |         | 0       |          |         | 0     |
+| windows      | 0      | 0     | 0   | 0   |
+| macos        | 0      | 0     |
+| freebsd      | 0      | 0     | 0   | 0   | 0       | 0       |
+| netbsd       | 0      | 0     | 0   | 0   |         |         |          | 0       |       |
+| openbsd      | 0      | 0     | 0   |     |         | 0       |          | 0       |       |
+| dragonflybsd | 0      |
+| plan9        | 0      |       | 0   |     |
 | solaris   `^`|
 | illumos   `^`|
 | haiku     `^`|
