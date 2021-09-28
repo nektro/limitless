@@ -1,0 +1,7 @@
+iso
+isofiles
+images
+
+zig-*
+.zigmod
+deps.zig
