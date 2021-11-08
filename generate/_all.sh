@@ -59,6 +59,11 @@ case "$os" in
         # 'sparc64'
     )
     ;;
+"dragonflybsd")
+    archs=(
+        "x86_64"
+    )
+    ;;
 *)
     echo "Invalid OS chosen."
     exit
