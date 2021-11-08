@@ -39,6 +39,16 @@ case "$os" in
         # 'riscv-riscv64'
     )
     ;;
+"netbsd")
+    archs=(
+        'amd64'
+        # 'evbarm-aarch64'
+        # 'i386'
+        # 'evbarm-earm'
+        # 'evbmips-mips64el'
+        # 'sparc64'
+    )
+    ;;
 *)
     echo "Invalid OS chosen."
     exit
