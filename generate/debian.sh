@@ -13,14 +13,12 @@ arch="$1"
 if [ -z "$arch" ]
 then
     echo "Must pass an arch value."
-    echo "One of: amd64, arm64, armel, armhf, i386, mips, mips64el, mipsel, ppc64el, s390x"
     exit
 fi
 
 set -x
 
 iso="debian-$version-$arch-netinst.iso"
-# url="https://cdimage.debian.org/debian-cd/current/$arch/iso-cd/$iso"
 url="https://cdimage.debian.org/mirror/cdimage/archive/$version/$arch/iso-cd/$iso"
 
 hdd="images/$os.$arch.qcow2"
@@ -32,8 +30,6 @@ mkdir -p iso
 wget -P iso --no-clobber --quiet --show-progress $url
 
 
-#
-#
 if [ ! -f $hdd ]
 then
     # add preseed file and repackage iso
