@@ -50,13 +50,14 @@ case "$os" in
     )
     ;;
 "openbsd")
+    archs=(
         'amd64'
         # 'arm64'
         # 'i386'
         # 'armv7'
         # 'riscv64'
-        # 'powerpc64'
         # 'sparc64'
+    )
     ;;
 *)
     echo "Invalid OS chosen."
