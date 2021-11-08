@@ -13,10 +13,7 @@ case "$os" in
     ./generate/debian.sh i386
     # ./generate/debian.sh arm64
     # ./generate/debian.sh armel
-    # ./generate/debian.sh armhf
-    # ./generate/debian.sh mips
     # ./generate/debian.sh mips64el
-    # ./generate/debian.sh mipsel
     # ./generate/debian.sh ppc64el
     # ./generate/debian.sh s390x
     ;;
