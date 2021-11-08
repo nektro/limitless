@@ -11,7 +11,7 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 |--------------|---------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
 | linux/debian | 10.10.0 | 1      | 0     | 1   | 0   |         | 0       | 0        |         | 0     |
 | linux/alpine | 3.14.2  | 0      | 0     | 0   | 0   |         | 0       |          |         | 0     |
-| freebsd      | 13.0    | 0      | 0     | 0   |     | 0       | 0       |
+| freebsd      | 13.0    | 0      | 0     | 0   |     | 0       | 0       |          |         |       |
 | netbsd       | 9.2     | 0      | 0     | 0   | 0   |         |         | 0        | 0       |       |
 | openbsd      | 7.0     | 0      | 0     | 0   |0    | 0       | 0       |          | 0       |       |
 
