@@ -30,6 +30,15 @@ case "$os" in
         # 's390x'
     )
     ;;
+"freebsd")
+    archs=(
+        'amd64'
+        # 'arm64-aarch64'
+        # 'i386'
+        # 'powerpc-powerpc64le'
+        # 'riscv-riscv64'
+    )
+    ;;
 *)
     echo "Invalid OS chosen."
     exit
