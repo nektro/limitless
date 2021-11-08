@@ -20,6 +20,16 @@ case "$os" in
         # 's390x'
     )
     ;;
+"alpine")
+    archs=(
+        'x86_64'
+        # 'x86'
+        # 'aarch64'
+        # 'armv7'
+        # 'ppc64le'
+        # 's390x'
+    )
+    ;;
 *)
     echo "Invalid OS chosen."
     exit
