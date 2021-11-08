@@ -49,6 +49,15 @@ case "$os" in
         # 'sparc64'
     )
     ;;
+"openbsd")
+        'amd64'
+        # 'arm64'
+        # 'i386'
+        # 'armv7'
+        # 'riscv64'
+        # 'powerpc64'
+        # 'sparc64'
+    ;;
 *)
     echo "Invalid OS chosen."
     exit
