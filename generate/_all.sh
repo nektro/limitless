@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env bash
 
 set -e
 set -x
@@ -6,18 +6,27 @@ set -x
 # Meta script for building all architectures of an OS
 
 os="$1"
+archs=""
 
 case "$os" in
 "debian")
-    ./generate/debian.sh amd64
-    ./generate/debian.sh i386
-    # ./generate/debian.sh arm64
-    # ./generate/debian.sh armel
-    # ./generate/debian.sh mips64el
-    # ./generate/debian.sh ppc64el
-    # ./generate/debian.sh s390x
+    archs=(
+        'amd64'
+        'i386'
+        # 'arm64'
+        # 'armel'
+        # 'mips64el'
+        # 'ppc64el'
+        # 's390x'
+    )
     ;;
 *)
     echo "Invalid OS chosen."
+    exit
     ;;
 esac
+
+for arc in ${archs[@]}
+do
+    ./generate/$os.sh $arc
+done
