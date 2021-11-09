@@ -16,10 +16,18 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 | openbsd      | 7.0     | 0      | 0     | 0   | 0   | 0       |         |          | 0       |       |
 | dragonflybsd | 6.0.1   | 0      |       |     |     |         |         |          |         |       |
 
+---
+
+-1. The OS has an `.iso` but appears to not have an installer. More investigation needed.
+
+|              | Version | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
+|--------------|---------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
+| linux/nixos  | 21.05   | 0      | 0     | 0   |     |         |         |          |         |       |
+| plan9/9front | 8593    | 0      |       | 0   |     |         |         |          |         |       |
+
 <!--
 | windows      |         | 0      | 0     | 0   | 0   |
 | macos        |         | 0      | 0     |
-| plan9        |         | 0      |       | 0   |     |
 | solaris   `^`|         |
 | illumos   `^`|         |
 | haiku     `^`|         |
