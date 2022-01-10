@@ -5,3 +5,9 @@
 - Click "Install" option in GRUB when KVM boots up
 - Most questions are prefilled but you do have to hit enter on the disk selection question
 - During "Tasksel", unclick "desktop environment" and "print server"
+
+## Alpine
+- `./generate/_all.sh alpine`
+- Login as "root"
+- Run `setup-alpine` command and answer the installer prompts
+- Run `poweroff` to shutdown the system
