@@ -21,7 +21,8 @@ set -x
 iso="$os-$version.amd64.iso"
 url="http://9front.org/iso/$iso.gz"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

@@ -21,7 +21,8 @@ set -x
 iso="FreeBSD-$version-RELEASE-$arch-bootonly.iso"
 url="https://download.freebsd.org/ftp/releases/ISO-IMAGES/$version/$iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

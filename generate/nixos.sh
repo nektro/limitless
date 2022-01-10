@@ -21,7 +21,8 @@ set -x
 iso="nixos-minimal-$arch-$version.iso"
 url="https://channels.nixos.org/nixos-$version/latest-nixos-minimal-$arch-linux.iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

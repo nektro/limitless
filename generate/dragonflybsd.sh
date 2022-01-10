@@ -21,7 +21,8 @@ set -x
 iso="dfly-$arch-${version}_REL.iso"
 url="http://mirror-master.dragonflybsd.org/iso-images/$iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

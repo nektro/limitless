@@ -21,7 +21,8 @@ set -x
 iso="alpine-virt-$version-$arch.iso"
 url="https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/$arch/$iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- $os $arch)
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

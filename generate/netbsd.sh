@@ -21,7 +21,8 @@ set -x
 iso="NetBSD-$version-$arch.iso"
 url="https://cdn.netbsd.org/pub/NetBSD/NetBSD-$version/images/$iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

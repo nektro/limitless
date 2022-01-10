@@ -21,7 +21,8 @@ set -x
 iso="debian-$version-$arch-netinst.iso"
 url="https://cdimage.debian.org/mirror/cdimage/archive/$version/$arch/iso-cd/$iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #

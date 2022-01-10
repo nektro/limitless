@@ -21,7 +21,8 @@ set -x
 iso="$os-$version-$arch.iso"
 url="https://cdn.openbsd.org/pub/OpenBSD/$version/$arch/install70.iso"
 
-hdd="images/$os.$arch.qcow2"
+zigarch=$(zig run tools/os-zigify-arch.zig -- "$os" "$arch")
+hdd="images/$os.$zigarch.qcow2"
 
 
 #
