@@ -35,6 +35,7 @@ if [ ! -f $hdd ]
 then
     #
     # create qemu 32 GB disk
+    mkdir -p images
     qemu-img create -f qcow2 $hdd 32G
 
     #
