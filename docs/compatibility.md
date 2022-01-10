@@ -5,7 +5,7 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 > Note: this list is incomplete and being developed in tandem with the rest of the server currently.
 
 0. The os/arch combo is supported in some official capacity by upstream and a potential candidate.
-1. A script exists in [`generate/`](../generate) that can automatically build a reusable QEMU base image.
+1. A script exists in [`generate/`](../generate) that can build a reusable QEMU base image. (Some extra assembly may be required for certain targets.)
 
 |              | Version | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
 |--------------|---------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
@@ -15,13 +15,6 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 | netbsd       | 9.2     | 0      | 0     | 0   | 0   |         |         | 0        | 0       |       |
 | openbsd      | 7.0     | 0      | 0     | 0   | 0   | 0       |         |          | 0       |       |
 | dragonflybsd | 6.0.1   | 0      |       |     |     |         |         |          |         |       |
-
----
-
--1. The OS has an `.iso` but appears to not have an installer. More investigation needed.
-
-|              | Version | x86_64 | arm64 | x86 | arm | riscv64 | ppc64el | mips64el | sparcv9 | s390x |
-|--------------|---------|--------|-------|-----|-----|---------|---------|----------|---------|-------|
 | linux/nixos  | 21.05   | 0      | 0     | 0   |     |         |         |          |         |       |
 | plan9/9front | 8593    | 0      |       | 0   |     |         |         |          |         |       |
 
