@@ -21,6 +21,17 @@ pub const targets = struct {
         // .{ "aarch64", .aarch64 },
         // .{ "armv7", .arm },
     });
+
+    pub const freebsd = std.ComptimeStringMap(?Arch, .{
+        .{ "amd64", .x86_64 },
+        .{ "i386", .i386 },
+        // .{ "arm64-aarch64", .aarch64 },
+        // .{ "powerpc", .powerpc },
+        // .{ "powerpc-powerpc64", .powerpc64 },
+        // .{ "powerpc-powerpc64le", .powerpc64le },
+        // .{ "powerpc-powerpcspe", null },
+        // .{ "riscv-riscv64", .riscv64 },
+    });
 };
 
 pub fn DeclEnum(comptime T: type) type {

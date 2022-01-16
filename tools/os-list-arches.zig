@@ -19,6 +19,7 @@ pub fn main() !void {
     return switch (os) {
         .debian => try print(shared.targets.debian.kvs),
         .alpine => try print(shared.targets.alpine.kvs),
+        .freebsd => try print(shared.targets.freebsd.kvs),
     };
 }
 
