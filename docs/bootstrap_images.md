@@ -1,5 +1,13 @@
 # Generating the bootstrap QEMU images
 
+## All
+- leave `root` password empty
+- set timezone as UTC
+- most guided installers are really nice these days
+- make the partitioner use the entire disk
+- prefer picking a better mirror over enabling a proxy
+- always install/enable OpenSSH
+
 ## Debian
 - `./generate/_all.sh debian`
 - Click "Install" option in GRUB when KVM boots up
