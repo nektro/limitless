@@ -65,7 +65,7 @@ then
     qemu-img create -f qcow2 $hdd 32G
 
     # run qemu disk with iso installer
-    kvm \
+    qemu-system-$zigarch \
         -m 2048 \
         -hda $hdd \
         -boot d \
