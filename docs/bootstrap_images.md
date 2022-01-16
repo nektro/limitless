@@ -10,12 +10,23 @@
 
 ## Debian
 - `./generate/_all.sh debian`
-- Click "Install" option in GRUB when KVM boots up
+- Select "Install" option in GRUB when KVM boots up
 - Most questions are prefilled but you do have to hit enter on the disk selection question
-- During "Tasksel", unclick "desktop environment" and "print server"
+- During "Tasksel", uncheck "desktop environment" and "print server"
 
 ## Alpine
 - `./generate/_all.sh alpine`
 - Login as "root"
 - Run `setup-alpine` command and answer the installer prompts
+- Run `poweroff` to shutdown the system
+
+## FreeBSD
+- `./generate/_all.sh freebsd`
+- Select 'Multi user boot' in the bootloader (it's the first option)
+- Select 'Install' at welcome screen
+- Prefer UFS over ZFS for filesystem since jobs are run with low ram
+- Prefer GPT partition table
+- No need to add any other users
+- Final config: exit
+- Confirm opening a shell after installer is complete
 - Run `poweroff` to shutdown the system
