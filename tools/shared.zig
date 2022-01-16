@@ -4,10 +4,10 @@ const Arch = std.Target.Cpu.Arch;
 pub const targets = struct {
     pub const debian = std.ComptimeStringMap(?Arch, .{
         .{ "amd64", .x86_64 },
+        .{ "i386", .i386 },
         // .{ "arm64", .aarch64 },
         // .{ "armel", .arm },
         // .{ "armhf", null },
-        .{ "i386", .i386 },
         // .{ "mips", .mips },
         // .{ "mips64el", .mips64el },
         // .{ "mipsel", .mipsel },
@@ -16,10 +16,10 @@ pub const targets = struct {
     });
 
     pub const alpine = std.ComptimeStringMap(?Arch, .{
+        .{ "x86_64", .x86_64 },
+        .{ "x86", .i386 },
         // .{ "aarch64", .aarch64 },
         // .{ "armv7", .arm },
-        .{ "x86", .i386 },
-        .{ "x86_64", .x86_64 },
     });
 };
 
