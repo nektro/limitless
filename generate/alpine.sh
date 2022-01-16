@@ -8,7 +8,7 @@ set -e
 
 os="alpine"
 arch="$1"
-version="3.14.2"
+version="3.15.0"
 
 if [ -z "$arch" ]
 then
@@ -19,7 +19,7 @@ fi
 set -x
 
 iso="alpine-virt-$version-$arch.iso"
-url="https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/$arch/$iso"
+url="https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/$arch/$iso"
 
 zigarch=$(zig run tools/os-zigify-arch.zig -- $os $arch)
 hdd="images/$os.$zigarch.qcow2"
@@ -49,5 +49,4 @@ then
         -nographic \
 
     # TODO automate installer
-    # run `setup-alpine`
 fi
