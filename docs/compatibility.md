@@ -4,6 +4,10 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 
 > Note: this list is incomplete and being developed in tandem with the rest of the server currently.
 
+> Note: for the full list of Zig supported architectures see https://ziglang.org/documentation/master/std/#std;Target.Cpu.Arch
+
+> Note: for the full list of QEMU supported architectures see https://pkgs.alpinelinux.org/packages?name=qemu-system-*&branch=edge&arch=x86_64
+
 0. The os/arch combo is supported in some official capacity by upstream and a potential candidate.
 1. A script exists in [`generate/`](../generate) that can build a reusable QEMU base image. (Some extra assembly may be required for certain targets.)
 
