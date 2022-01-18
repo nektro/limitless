@@ -20,6 +20,7 @@ pub fn main() !void {
         .debian => try print(shared.targets.debian.kvs),
         .alpine => try print(shared.targets.alpine.kvs),
         .freebsd => try print(shared.targets.freebsd.kvs),
+        .netbsd => try print(shared.targets.netbsd.kvs),
     };
 }
 

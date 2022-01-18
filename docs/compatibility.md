@@ -16,7 +16,7 @@ Support of a given platform is indicated by a tier system. The tiers are as foll
 | linux/alpine | 3.15    | 1      | 0     | 1   | 0   |         | 0       |          |         | 0     |
 | linux/debian | 10.10.0 | 1      | 0     | 1   | 0   |         | 0       | 0        |         | 0     |
 | freebsd      | 13.0    | 1      | 0     | 1   |     | 0       | 0       |          |         |       |
-| netbsd       | 9.2     | 0      | 0     | 0   | 0   |         |         | 0        | 0       |       |
+| netbsd       | 9.2     | 1      | 0     | 1   | 0   |         |         | 0        | 0       |       |
 | openbsd      | 7.0     | 0      | 0     | 0   | 0   | 0       |         |          | 0       |       |
 | dragonflybsd | 6.0.1   | 0      |       |     |     |         |         |          |         |       |
 | linux/nixos  | 21.05   | 0      |       | 0   |     |         |         |          |         |       |

@@ -30,3 +30,23 @@
 - Final config: exit
 - Confirm opening a shell after installer is complete
 - Run `poweroff` to shutdown the system
+
+## NetBSD
+- `./generate/_all.sh netbsd`
+- Let it 'boot normally'
+- Install netbsd to hard disk
+- Guid partition table
+- Let installer pick partiton sizes
+- Use 'BIOS Console'
+- either 'installation without X11' or 'minimal installation'
+- Http download
+- 'Configure Network'
+- 'Get Distribution'
+- Network info is fine to preserve
+- Leave root password empty
+- Enable sshd
+- Enable ntpd
+- Run ntpd at boot
+- Select 'finish configuring'
+- Select 'exit install system'
+- Run `poweroff` to shutdown the system
